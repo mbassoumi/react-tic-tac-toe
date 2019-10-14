@@ -1,21 +1,17 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Game from "./components/Game";
+import Game from './components/Game';
 
-
-class Index extends Component {
-    render() {
-        return (
-            <Game/>
-        )
-    }
-}
-
+const Index = () => {
+  return (
+    <Game/>
+  );
+};
 
 // ========================================
 
 ReactDOM.render(
-    <Index />,
-    document.getElementById('root')
+  <Index/>,
+  document.getElementById('root')
 );
